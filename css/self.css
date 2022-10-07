@@ -1,0 +1,159 @@
+.menu-symbol {
+    margin: 1em;
+    width: 40px;
+}
+
+.menu-symbol::after,
+.menu-symbol::before,
+.menu-symbol div {
+    background-color: #c2c2c2;
+    border-radius: 3px;
+    content:'';
+    display: block;
+    height: 5px;
+    margin: 7px 0;
+    transition: all .2s ease-in-out;
+}
+
+.change .menu-symbol::before {
+    transform: translateY(12px) rotate(135deg);
+}
+
+.change .menu-symbol::after {
+    transform: translateY(-12px) rotate(-135deg);
+}
+
+.change .menu-symbol div {
+    transform: scale(0);
+}
+
+#portfolio {
+    background: #E8BC44
+    /* background: #343a40 !important; */
+}
+
+.dropdown-menu {
+    background-color: #132F49;
+    border: none;
+}
+
+.dropdown-item {
+    color: rgba(255, 255, 255, .6) !important;
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    color: #ffffff !important;
+    text-decoration: none;
+    background-color: #132F49;    
+}
+
+.dropdown-item.active, 
+.dropdown-item:active {
+    background-color: #132F49;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 0 5px;
+    flex-wrap: wrap;
+}
+
+.footer {
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.footer p {
+    color: white;
+}
+
+.footer a {
+    color: #c3c3c3;
+}
+
+.footer a:hover,
+.footer a:active {
+    color: white;
+}
+
+@media (min-width: 576px) {
+
+    .footer .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0 5px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 992px) {
+    .nav-item {
+        display: flex;
+        align-items: center;
+    }
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption {
+    background: rgba(192, 35, 44, .9);
+}
+
+#phone-number {
+    display: block;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(15, 43, 69, 0.5);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #132F49;
+  border-color: #132F49;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(15, 43, 69, 0.5);
+}
+
+.btn-primary:focus, .btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(15, 43, 69, 0.5);
+}
+
+@media (min-width: 992px) {
+    header.masthead {
+      height: auto;
+    }
+  }
+
+
+.flyer {
+    box-shadow: 0px 0px 50px black;
+    width: 40%; 
+    margin: 2rem 2rem;
+    /* position: relative; */
+}
+
+.mobile-shadow {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .flyer {
+        margin: 0 0;
+        box-shadow: none;
+        width: unset;
+    }
+
+    .mobile-shadow {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 0px 50px black;
+        width: 50%;
+    }
+}
